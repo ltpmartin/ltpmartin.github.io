@@ -2,28 +2,76 @@
 <html>
     <head>
       <title>Read this if you're gay</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Rubik+Beastly&display=swap" rel="stylesheet">
       <style>
+        h1 {
+          color: pink;
+          font-family: "RubikBeastly", monospace;
+        }
+        .styleclass1 {
+          color: skyblue;
+          font-size: 40px;
+          font-family: monospace;
+        }
+        .largeimage {
+          width: 500px;
+        }
+        .thinblackborder {
+          border-width: 5px;
+          border-color: black;
+          border-style: solid;
+        }
+        main {
+          background-color: lightgray;
+        }
+        #secondpic {
+          border-radius: 50%;
+        }
+        .box {
+          border-color: black;
+          border-style: solid;
+          border-width: 5px;
+          text-align: center;
+        }
+        .bigbox {
+        background-color: red;
+        padding: 10px;
+        width: 250px;
+        height: 250px;
+        }
+        .smallbox {
+        color: blue;
+        margin: auto;
+        vertical-align: middle;
+        }
       </style>
     </head>
 <main>
   <body>
-    <div id="heading">
+    <div class="thinblackborder" id="heading">
       <h1 id="heading">Hello, Web Development is my Passion!</h1>
-      <h2>This is a h2 line.</h2>
+      <h2 class="styleclass1">This is a h2 line.</h2>
       <p>This is a paragraph</p>
     </div>
+    <div class="bigbox box">
+        <div class="smallbox box">
+          <p>Test Text</p>
+        </div>      
+    </div>
     <div id="pics">
-      <img src="https://cdn.discordapp.com/attachments/217518191868379136/934086331250909204/1642670467117s.png" alt="Forbidden Avocado" id="forbidden-avocado">
+      <img style="border-radius: 25%;" class="largeimage thinblackborder" src="https://cdn.discordapp.com/attachments/217518191868379136/934086331250909204/1642670467117s.png" alt="Forbidden Avocado" id="forbidden-avocado">
       <p>Click <a href="#garfield">THIS</a> link to jump to feet question.</p>
       <p>Click <a href="https://cdn.discordapp.com/attachments/217518191868379136/934086331250909204/1642670467117s.png" target="_blank">THIS </a>to open Forbidden Avocado in new tab. target="_blank" makes an anchor tag open in new page.</p>
       <p>This paragraph contants a <a href="#">dead</a> link. point href at # for a dead link</p>
-      <a href="https://onlyfans.com/nikocadoavocado" target="_blank"><img src="https://cdn.discordapp.com/attachments/217518191868379136/934086331250909204/1642670467117s.png" alt="Click this image for nikocado onlyfans." id="forbidden-avocado"></a>
+      <a href="https://onlyfans.com/nikocadoavocado" target="_blank"><img id="secondpic" src="https://cdn.discordapp.com/attachments/217518191868379136/934086331250909204/1642670467117s.png" alt="Click this image for nikocado onlyfans." id="forbidden-avocado"></a>
       <p>Click on the above image to be linked to Forbidden Avocado Onlyfans. It is an image nested within an anchor tag.</p>
     </div>
     <div id="list">
       <p>This is an unordered list of where pee is stored</p>
         <ul>
-          <li>Balls</li>
+          <li style="color: red;">Balls</li>
           <li>Balls</li>
           <li>Testicles</li>
         </ul>
