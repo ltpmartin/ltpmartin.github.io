@@ -6,6 +6,9 @@
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Rubik+Beastly&display=swap" rel="stylesheet">
       <style>
+        :root {
+          --heading: green;
+        }
         h1 {
           color: pink;
           font-family: "RubikBeastly", monospace;
@@ -24,7 +27,11 @@
           border-style: solid;
         }
         main {
-          background-color: lightgray;
+          background-color: gray;
+          text-align: left;
+        }
+        #heading {
+          background-color: var(--heading);
         }
         #secondpic {
           border-radius: 50%;
@@ -46,21 +53,75 @@
         margin: auto;
         vertical-align: middle;
         }
+        .second-box {
+        border-style: solid;
+        border-color: black;
+        border-width: 5px;
+        text-align: center;
+        width: 250px;
+        }
+        .second-box-background {
+          background-color: yellow;
+          padding: 15px;
+        }
+        .second-box-red {
+          background-color: red;
+          padding: 30px;
+          margin: -10px;
+        }
+        .second-box-blue {
+          background-color: blue;
+          padding: 30px;
+          margin: -10px;
+        }
+        [type='radio'] {
+          margin: 50px;
+        }
+        .div-margin {
+          margin: 50px 0px;
+        }
+        .important1 {
+          color: green;
+        }
+        .important2 {
+          color: hotpink;
+        }
+        .variable {
+        --heading: green;
+        }
+        .paragraph-1 {
+          text-align: center;
+          width: 50%;
+          margin: auto;
+          background-color: rgba(45, 45, 45, 0.1);
+          box-shadow: 1px 1px;
+          font-weight: 800;
+          line-height: 25px;
+        }
+        .paragraph-1:hover {
+          color: pink;
+        }
       </style>
     </head>
 <main>
   <body>
-    <div class="thinblackborder" id="heading">
+    <div class="thinblackborder div-margin" id="heading" style="margin-bottom: 100px;">
       <h1 id="heading">Hello, Web Development is my Passion!</h1>
       <h2 class="styleclass1">This is a h2 line.</h2>
-      <p>This is a paragraph</p>
+      <p class="paragraph-1">This is a paragraph. I'm writing some random bullshit in here and I'll hopefully style it in some way.<hr> 
+      <p class="paragraph-1"><s><strong>Penis.</strong></s></p><hr>
+      <p class="paragraph-1">The <u>FitnessGram™</u> <em>Pacer Test</em> is a multistage aerobic capacity test that progressively gets more difficult as it continues. The 20 meter pacer test will begin in 30 seconds. Line up at the start. The running speed starts slowly, but gets faster each minute after you hear this signal. A single lap should be completed each time you hear this sound. Remember to run in a straight line, and run as long as possible. The second time you fail to complete a lap before the sound, your test is over. The test will begin on the word start. On your mark, get ready, start.</p><hr>
     </div>
-    <div class="bigbox box">
+    <div class="bigbox box div-margin">
         <div class="smallbox box">
           <p>Test Text</p>
         </div>      
     </div>
-    <div id="pics">
+    <div id="second-box" class="second-box second-box-background">
+      <h5 class="second-box-red important1 important2" style="padding: 5em;">Padding</h5>
+      <h5 class="second-box-blue">Padding 2</h5>
+    </div>
+    <div id="pics" class="div-margin">
       <img style="border-radius: 25%;" class="largeimage thinblackborder" src="https://cdn.discordapp.com/attachments/217518191868379136/934086331250909204/1642670467117s.png" alt="Forbidden Avocado" id="forbidden-avocado">
       <p>Click <a href="#garfield">THIS</a> link to jump to feet question.</p>
       <p>Click <a href="https://cdn.discordapp.com/attachments/217518191868379136/934086331250909204/1642670467117s.png" target="_blank">THIS </a>to open Forbidden Avocado in new tab. target="_blank" makes an anchor tag open in new page.</p>
@@ -68,7 +129,7 @@
       <a href="https://onlyfans.com/nikocadoavocado" target="_blank"><img id="secondpic" src="https://cdn.discordapp.com/attachments/217518191868379136/934086331250909204/1642670467117s.png" alt="Click this image for nikocado onlyfans." id="forbidden-avocado"></a>
       <p>Click on the above image to be linked to Forbidden Avocado Onlyfans. It is an image nested within an anchor tag.</p>
     </div>
-    <div id="list">
+    <div id="list" class="div-margin">
       <p>This is an unordered list of where pee is stored</p>
         <ul>
           <li style="color: red;">Balls</li>
@@ -80,20 +141,20 @@
           <li>Garfield</li>
         </ol>
     </div>
-    <div id="submissionform">
+    <div id="submissionform" class="div-margin">
       <p id="garfield">Whose feet you wanna lick?</p>
         <form action="localhost">
         <input type="text" name="Lick Feet" placeholder="Type Garfield please" required pattern="Garfield" title="Must Be Garfield">
         <button type="submit">Click to Submit</button>     
         </form>
     </div>
-    <div id="truefalseradio">
+    <div id="truefalseradio" class="div-margin">
       <label for="true-false">True or False?
         <input id="true-false" value="true" type="radio" name="true-false" checked>True
         <input id="true-false" value="false" type="radio" name="true-false">False
       </label>
     </div>
-    <div id="garfieldcheckbox">
+    <div id="garfieldcheckbox" class="div-margin">
       <label for="ilovegarfield"><input id="ilovegarfield" type="checkbox" name="I Love Garfield">I Love Garfield</label>
     </div>
   </body>
